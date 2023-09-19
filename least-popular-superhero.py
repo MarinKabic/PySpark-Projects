@@ -3,7 +3,7 @@ from pyspark.sql import functions as func
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
 # Creating a Spark Session
-spark = SparkSession.builder.appName("least_Popular_superhero").getOrCreate()
+spark = SparkSession.builder.appName("Marvel-Superheroes").getOrCreate()
 
 # Defining the schema for the dataset
 shema = StructType ([\
