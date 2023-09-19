@@ -10,7 +10,7 @@ shema = StructType ([\
                      StructField("id", IntegerType(), True),\
                      StructField("hero_name", StringType(), True)])
 
-# Loading the data with ID and Names
+# Loading the data with ID's and Names
 names = spark.read.schema(shema).option("sep", " ").csv("file:///SparkProjects/Marvel-Names.txt")
 lines = spark.read.text("file:///SparkProjects/Marvel-Graph.txt")
 
